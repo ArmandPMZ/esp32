@@ -25,7 +25,7 @@
 
 /* 4. Define the user Email and password that alreadey registerd or added in your project */
 #define USER_EMAIL "armandopalomequemartinez@gmail.com"
-#define USER_PASSWORD "tallerinfo"
+#define USER_PASSWORD "password"
 
 //tiempo y ultrasonido
 const char* ntpServer = "pool.ntp.org";
@@ -106,7 +106,7 @@ void loop()
     GetDate();
     ReadUltrasonico();
     //fin fecha y ultra
-    FireBase();
+    FireBase(); //mandamos a llamar la funcion de la base de datos
 }
 void FireBase(void){
     //Flash string (PROGMEM and  (FPSTR), String C/C++ string, const char, char array, string literal are supported
@@ -130,7 +130,7 @@ void FireBase(void){
         FirebaseJsonArray arr;
         arr.setFloatDigits(2);
         arr.setDoubleDigits(4);
-        arr.add("a", "b", "c", true, 45, (float)6.1432, 123.45692789, distanceCm, fecha);
+        arr.add("a", "b", "c", true, 45, (float)6.1432, 123.45692789, distanceCm, fecha); //mandamos variables de distancia de sensor y la fecha
 
         Serial.printf("Set array... %s\n", Firebase.RTDB.setArray(&fbdo, "/test/array", &arr) ? "ok" : fbdo.errorReason().c_str());
 
