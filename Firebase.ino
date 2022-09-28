@@ -116,6 +116,14 @@ void FireBase(void){
     {
         sendDataPrevMillis = millis();
 
+        FirebaseJson dist;
+        dist.setDoubleDigits(4);
+        dist.add("value", distanceCm);
+        
+        FirebaseJson fech;
+        fech.setDoubleDigits(12);
+        fech.add("value", fecha);
+        
         FirebaseJson json;
         json.setDoubleDigits(3);
         json.add("value", count);
