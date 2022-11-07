@@ -1,3 +1,7 @@
+/* Con este codigo tenemos dos tareas con diferente prioridad, la tarea con mayor prioridad al inicio de la ejecución
+se observa pero detenemos la ejecución de esta con una parte del codigo que se encuentra en el loop, con la tarea de menor
+prioridad lo que se hace es imprimir un * y este en un tiempo determinado como es la una tarea que queda apesar de que le 
+agregamos algunos retrasos a la tarea podemos ver en el monitor serial el * muchas veces.*/
 // Use only core 1 for demo purposes
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
