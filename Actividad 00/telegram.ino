@@ -1,3 +1,8 @@
+/* Este codigo nos permite realizar como primer paso la conexión wifi de nuestro esp
+y en segundo la conexión con un bot de telegram el cual se configura por medio de 
+nuesto token y ID. Una vez que ya se conecto podemos encender y apagar un led ya integrado
+en el esp y podemos ver su estado con los comandos: led_on,led_Off,state. y podemos comprobar
+esta comunicación con nuestro bot y con el encendido del led.*/
 #ifdef ESP32
   #include <WiFi.h>
 #else
