@@ -1,3 +1,8 @@
+/* Con este programa se realiza una conexion bluetooth,
+Con la ayuda de la aplicación serial bluetooth terminal
+enviamos algunos comandos como por ejemplo: Reset(resetea el bluetooth del esp),
+OnLED(enciende led integrado en el esp) y OffLED(apaga ese mismo led).
+Intente poner el boton para encender la comunicación pero no lo logre.*/
 #include <BluetoothSerial.h>
 #define LED1_GPIO 4
 #define boton_GPIO 2
