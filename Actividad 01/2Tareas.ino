@@ -1,3 +1,7 @@
+/* Con este codigo se realizan dos tareas las cuales experimentando con su prioridad se observo
+en la condición de tener la misma prioridad las tareas un comportamiento mas estable entre estas dos tarea
+y en la condición de tener una tarea con mayor prioridad e invertir esta prioridad se observo
+que como era obvio la tarea con mayor prioridad es la tarea dominante por lo tanto se logra ver mas*/
 #if CONFIG_FREERTOS_UNICORE
 static const BaseType_t app_cpu = 0;
 #else
