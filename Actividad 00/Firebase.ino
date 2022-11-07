@@ -1,3 +1,6 @@
+/* En este programa se realiza la conexion hacia nuestra base de datos firebase, 
+le mandamos los valores de un ultrasonico y 
+podemos observar desde la pagina de firebase los datos en tiempo real */
 #if defined(ESP32)
 #include <WiFi.h>
 #elif defined(ESP8266)
