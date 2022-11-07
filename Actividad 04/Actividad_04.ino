@@ -1,3 +1,4 @@
+/*En este codigo vemos implementado el queue.....*/
 // Use only core 1 for demo purposes
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
