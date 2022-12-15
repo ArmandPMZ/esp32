@@ -1,4 +1,6 @@
-/*En este codigo vemos implementado el queue.....*/
+/*En este codigo vemos implementado el queue que es un almacenamiento temporal
+que funciona como una cola, tenemos una tarea creandose en este programa y 
+tenemos en la parte del ciclo una condicion para ver si queue ya esta lleno.*/
 // Use only core 1 for demo purposes
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
