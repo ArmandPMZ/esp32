@@ -1,4 +1,6 @@
-/*No jalo como se esperaba*/
+/*En este programa hacemos uso de mutex que funciona como un
+sermaforo en el cual hace que en las tareas creadas ordene
+como imprimen de manera ascendente de uno en uno iniciando por el 1*/
 // Use only core 1 for demo purposes
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
