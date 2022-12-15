@@ -1,3 +1,4 @@
+/*Este semaforo no funciona como se esperaba.*/
 // Use only core 1 for demo purposes
 #if CONFIG_FREERTOS_UNICORE
   static const BaseType_t app_cpu = 0;
